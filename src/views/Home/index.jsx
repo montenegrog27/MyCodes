@@ -26,7 +26,7 @@ function Home() {
             variant="contained"
             color="primary"
             component={Link}
-            to="/notas"
+            to="/notes"
             sx={{ mr: 2 }}
           >
             Notas

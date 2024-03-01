@@ -20,6 +20,7 @@ import {
 } from "firebase/firestore";
 
 import db from "../../firebase";
+import { Link } from "react-router-dom";
 
 function Querys() {
   const [querys, setQuerys] = useState([]);
@@ -109,7 +110,17 @@ function Querys() {
 
   return (
     <>
-      <Button onClick={createObject} variant="contained" color="primary">
+      <Button component={Link} to="/" variant="contained" color="primary">
+        Ir a Home
+      </Button>
+      <Button
+        onClick={createObject}
+        variant="contained"
+        color="primary"
+        sx={{
+          margin: "10px",
+        }}
+      >
         Crear nueva Query
       </Button>
       <Grid
